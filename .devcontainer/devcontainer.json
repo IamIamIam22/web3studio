@@ -1,0 +1,23 @@
+{
+  "name": "Web3 Studio",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:20-bullseye",
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.vscode-typescript-next",
+        "dsznajder.es7-react-js-snippets",
+        "GitHub.copilot"
+      ],
+      "settings": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+        "typescript.tsdk": "node_modules/typescript/lib"
+      }
+    }
+  },
+  "forwardPorts": [3000, 8080],
+  "postCreateCommand": "npm install"
+}
