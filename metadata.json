@@ -1,0 +1,6 @@
+{
+  "name": "Web3 Studio: Mainnet & Telegram Alert Hub",
+  "description": "Production-grade Web3 command center for 100% Mainnet EVM (Ethereum, Arbitrum, Base, Optimism, Polygon, BSC, Avalanche) and Bitcoin UTXO/BitVM2, featuring real on-chain transaction receipt verification, live balance tracking, and instant Telegram Bot alerts for new profits and on-chain transactions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

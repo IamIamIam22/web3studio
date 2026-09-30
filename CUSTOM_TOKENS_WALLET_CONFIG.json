@@ -1,0 +1,401 @@
+{
+  "name": "Nexus Sentinel Multi-Chain Custom Tokens & Wallet Configuration",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "timestamp": "2026-08-31T09:30:00.000Z",
+  "keywords": ["nexus", "erc20", "custom-tokens", "wallet-import", "arbitrage", "mev", "yield"],
+  "networks": [
+    {
+      "id": "ethereum",
+      "name": "Ethereum Mainnet",
+      "chainId": 1,
+      "currency": "ETH",
+      "rpcUrls": ["https://cloudflare-eth.com", "https://eth.llamarpc.com"],
+      "explorer": "https://etherscan.io"
+    },
+    {
+      "id": "arbitrum",
+      "name": "Arbitrum One",
+      "chainId": 42161,
+      "currency": "ETH",
+      "rpcUrls": ["https://arb1.arbitrum.io/rpc"],
+      "explorer": "https://arbiscan.io"
+    },
+    {
+      "id": "base",
+      "name": "Base Mainnet",
+      "chainId": 8453,
+      "currency": "ETH",
+      "rpcUrls": ["https://mainnet.base.org"],
+      "explorer": "https://basescan.org"
+    },
+    {
+      "id": "optimism",
+      "name": "OP Mainnet",
+      "chainId": 10,
+      "currency": "ETH",
+      "rpcUrls": ["https://mainnet.optimism.io"],
+      "explorer": "https://optimistic.etherscan.io"
+    },
+    {
+      "id": "polygon",
+      "name": "Polygon PoS",
+      "chainId": 137,
+      "currency": "POL",
+      "rpcUrls": ["https://polygon-rpc.com"],
+      "explorer": "https://polygonscan.com"
+    },
+    {
+      "id": "bsc",
+      "name": "BNB Smart Chain",
+      "chainId": 56,
+      "currency": "BNB",
+      "rpcUrls": ["https://bsc-dataseed.binance.org"],
+      "explorer": "https://bscscan.com"
+    },
+    {
+      "id": "avalanche",
+      "name": "Avalanche C-Chain",
+      "chainId": 43114,
+      "currency": "AVAX",
+      "rpcUrls": ["https://api.avax.network/ext/bc/C/rpc"],
+      "explorer": "https://snowtrace.io"
+    },
+    {
+      "id": "sepolia",
+      "name": "Ethereum Sepolia Testnet",
+      "chainId": 11155111,
+      "currency": "ETH",
+      "rpcUrls": ["https://rpc.sepolia.org"],
+      "explorer": "https://sepolia.etherscan.io"
+    },
+    {
+      "id": "holesky",
+      "name": "Ethereum Holesky Testnet",
+      "chainId": 17000,
+      "currency": "ETH",
+      "rpcUrls": ["https://ethereum-holesky-rpc.publicnode.com"],
+      "explorer": "https://holesky.etherscan.io"
+    }
+  ],
+  "tokens": [
+    {
+      "chainId": 1,
+      "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "name": "USD Coin",
+      "symbol": "USDC",
+      "decimals": 6,
+      "network": "ethereum",
+      "standard": "ERC-20"
+    },
+    {
+      "chainId": 1,
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "name": "Tether USD",
+      "symbol": "USDT",
+      "decimals": 6,
+      "network": "ethereum",
+      "standard": "ERC-20"
+    },
+    {
+      "chainId": 1,
+      "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "name": "Wrapped Ether",
+      "symbol": "WETH",
+      "decimals": 18,
+      "network": "ethereum",
+      "standard": "ERC-20"
+    },
+    {
+      "chainId": 1,
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "name": "Dai Stablecoin",
+      "symbol": "DAI",
+      "decimals": 18,
+      "network": "ethereum",
+      "standard": "ERC-20"
+    },
+    {
+      "chainId": 1,
+      "address": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+      "name": "Wrapped BTC",
+      "symbol": "WBTC",
+      "decimals": 8,
+      "network": "ethereum",
+      "standard": "ERC-20"
+    },
+    {
+      "chainId": 1,
+      "address": "0x514910771AF9Ca656af840dff83E8264EcF986CA",
+      "name": "Chainlink Token",
+      "symbol": "LINK",
+      "decimals": 18,
+      "network": "ethereum",
+      "standard": "ERC-20"
+    },
+    {
+      "chainId": 1,
+      "address": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
+      "name": "Uniswap",
+      "symbol": "UNI",
+      "decimals": 18,
+      "network": "ethereum",
+      "standard": "ERC-20"
+    },
+    {
+      "chainId": 1,
+      "address": "0x89205A3A3b2A69De6Dbf7f01ED13B2108B2c43e7",
+      "name": "Nexus Yield Token",
+      "symbol": "NYT",
+      "decimals": 18,
+      "network": "ethereum",
+      "standard": "ERC-20"
+    },
+    {
+      "chainId": 42161,
+      "address": "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
+      "name": "USD Coin (Native Arbitrum)",
+      "symbol": "USDC",
+      "decimals": 6,
+      "network": "arbitrum",
+      "standard": "ERC-20"
+    },
+    {
+      "chainId": 42161,
+      "address": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9",
+      "name": "Tether USD",
+      "symbol": "USDT",
+      "decimals": 6,
+      "network": "arbitrum",
+      "standard": "ERC-20"
+    },
+    {
+      "chainId": 42161,
+      "address": "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
+      "name": "Wrapped Ether (Arbitrum)",
+      "symbol": "WETH",
+      "decimals": 18,
+      "network": "arbitrum",
+      "standard": "ERC-20"
+    },
+    {
+      "chainId": 42161,
+      "address": "0x912CE59144191C1204E64559FE8253a0e49E6548",
+      "name": "Arbitrum",
+      "symbol": "ARB",
+      "decimals": 18,
+      "network": "arbitrum",
+      "standard": "ERC-20"
+    },
+    {
+      "chainId": 42161,
+      "address": "0xfc5A1A6EB076a2C7aD06eD22C90d7E710E35ad0a",
+      "name": "GMX Token",
+      "symbol": "GMX",
+      "decimals": 18,
+      "network": "arbitrum",
+      "standard": "ERC-20"
+    },
+    {
+      "chainId": 8453,
+      "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "name": "USD Coin (Native Base)",
+      "symbol": "USDC",
+      "decimals": 6,
+      "network": "base",
+      "standard": "ERC-20"
+    },
+    {
+      "chainId": 8453,
+      "address": "0x4200000000000000000000000000000000000006",
+      "name": "Wrapped Ether (Base)",
+      "symbol": "WETH",
+      "decimals": 18,
+      "network": "base",
+      "standard": "ERC-20"
+    },
+    {
+      "chainId": 8453,
+      "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "name": "Coinbase Wrapped BTC",
+      "symbol": "cbBTC",
+      "decimals": 8,
+      "network": "base",
+      "standard": "ERC-20"
+    },
+    {
+      "chainId": 8453,
+      "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
+      "name": "Aerodrome Finance",
+      "symbol": "AERO",
+      "decimals": 18,
+      "network": "base",
+      "standard": "ERC-20"
+    },
+    {
+      "chainId": 10,
+      "address": "0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85",
+      "name": "USD Coin (Native Optimism)",
+      "symbol": "USDC",
+      "decimals": 6,
+      "network": "optimism",
+      "standard": "ERC-20"
+    },
+    {
+      "chainId": 10,
+      "address": "0x4200000000000000000000000000000000000042",
+      "name": "Optimism",
+      "symbol": "OP",
+      "decimals": 18,
+      "network": "optimism",
+      "standard": "ERC-20"
+    },
+    {
+      "chainId": 10,
+      "address": "0x4200000000000000000000000000000000000006",
+      "name": "Wrapped Ether (Optimism)",
+      "symbol": "WETH",
+      "decimals": 18,
+      "network": "optimism",
+      "standard": "ERC-20"
+    },
+    {
+      "chainId": 137,
+      "address": "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359",
+      "name": "USD Coin (Native Polygon)",
+      "symbol": "USDC",
+      "decimals": 6,
+      "network": "polygon",
+      "standard": "ERC-20"
+    },
+    {
+      "chainId": 137,
+      "address": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
+      "name": "Tether USD",
+      "symbol": "USDT",
+      "decimals": 6,
+      "network": "polygon",
+      "standard": "ERC-20"
+    },
+    {
+      "chainId": 137,
+      "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
+      "name": "Wrapped Ether (Polygon)",
+      "symbol": "WETH",
+      "decimals": 18,
+      "network": "polygon",
+      "standard": "ERC-20"
+    },
+    {
+      "chainId": 137,
+      "address": "0x455e53CBB86018Ac2B8092FdCd39d8444aFFC3e6",
+      "name": "Polygon Ecosystem Token",
+      "symbol": "POL",
+      "decimals": 18,
+      "network": "polygon",
+      "standard": "ERC-20"
+    },
+    {
+      "chainId": 56,
+      "address": "0x55d398326f99059fF775485246999027B3197955",
+      "name": "Binance-Peg Tether USD",
+      "symbol": "USDT",
+      "decimals": 18,
+      "network": "bsc",
+      "standard": "BEP-20"
+    },
+    {
+      "chainId": 56,
+      "address": "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d",
+      "name": "Binance-Peg USD Coin",
+      "symbol": "USDC",
+      "decimals": 18,
+      "network": "bsc",
+      "standard": "BEP-20"
+    },
+    {
+      "chainId": 56,
+      "address": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+      "name": "Wrapped BNB",
+      "symbol": "WBNB",
+      "decimals": 18,
+      "network": "bsc",
+      "standard": "BEP-20"
+    },
+    {
+      "chainId": 56,
+      "address": "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
+      "name": "PancakeSwap Token",
+      "symbol": "CAKE",
+      "decimals": 18,
+      "network": "bsc",
+      "standard": "BEP-20"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
+      "name": "USD Coin (Native Avalanche)",
+      "symbol": "USDC",
+      "decimals": 6,
+      "network": "avalanche",
+      "standard": "ERC-20"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7",
+      "name": "Tether USD",
+      "symbol": "USDT",
+      "decimals": 6,
+      "network": "avalanche",
+      "standard": "ERC-20"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX",
+      "decimals": 18,
+      "network": "avalanche",
+      "standard": "ERC-20"
+    },
+    {
+      "chainId": 11155111,
+      "address": "0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238",
+      "name": "Sepolia Test USDC",
+      "symbol": "USDC",
+      "decimals": 6,
+      "network": "sepolia",
+      "standard": "ERC-20"
+    },
+    {
+      "chainId": 11155111,
+      "address": "0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14",
+      "name": "Sepolia Test Wrapped Ether",
+      "symbol": "WETH",
+      "decimals": 18,
+      "network": "sepolia",
+      "standard": "ERC-20"
+    },
+    {
+      "chainId": 11155111,
+      "address": "0x779877A7B0D9E8603169DdbD7836e478b4624789",
+      "name": "Sepolia Chainlink",
+      "symbol": "LINK",
+      "decimals": 18,
+      "network": "sepolia",
+      "standard": "ERC-20"
+    },
+    {
+      "chainId": 17000,
+      "address": "0x94373a4919B3240D86eA41593D5eBa789FEF3848",
+      "name": "Holesky Wrapped Ether",
+      "symbol": "WETH",
+      "decimals": 18,
+      "network": "holesky",
+      "standard": "ERC-20"
+    }
+  ]
+}
